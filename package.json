@@ -1,34 +1,9 @@
 {
-  "name": "@adminkit/core",
+  "name": "dashboard",
   "version": "3.3.0",
-  "description": "AdminKit - Bootstrap 5 Admin Template",
-  "keywords": [
-    "bootstrap",
-    "bootstrap 5",
-    "admin",
-    "admin template",
-    "dashboard",
-    "dashboard template",
-    "template",
-    "responsive",
-    "css",
-    "sass",
-    "html",
-    "theme",
-    "front-end",
-    "ui kit",
-    "web"
-  ],
-  "homepage": "https://adminkit.io/",
-  "bugs": {
-    "url": "https://github.com/adminkit/adminkit/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adminkit/adminkit.git"
-  },
+  "description": "dashboard",
   "license": "MIT",
-  "author": "Paul Laros <support@adminkit.io>",
+  "author": "Med Achraf Karabila",
   "files": [
     "dist"
   ],
@@ -38,19 +13,6 @@
     "start": "webpack serve --config webpack.config.js --progress",
     "prepublishOnly": "cross-env NODE_ENV=production webpack --progress --config webpack.config.js"
   },
-  "browserslist": [
-    "> 0.5%",
-    "last 2 major versions",
-    "not dead",
-    "Chrome >= 60",
-    "Firefox >= 60",
-    "not Edge < 79",
-    "Firefox ESR",
-    "iOS >= 10",
-    "Safari >= 10",
-    "Android >= 6",
-    "not Explorer <= 11"
-  ],
   "dependencies": {
     "@babel/polyfill": "7.12.1",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
@@ -58,9 +20,7 @@
     "@popperjs/core": "2.11.5",
     "bootstrap": "5.2.0",
     "chart.js": "2.9.4",
-    "feather-icons": "4.29.0",
     "flatpickr": "4.6.13",
-    "simplebar": "5.3.8",
     "svgmap": "^2.10.1"
   },
   "devDependencies": {

@@ -1,0 +1,132 @@
+ .content {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-bar {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(270deg, #1F42A5, #040B2D);
+}
+.btn-register span{
+    margin-right: 20px;
+    height: 17px;
+    color: #ffffff;
+    font-family: "Roboto-Bold";
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 17px; */
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    float: right;
+}
+.shape {
+    width: 21px;
+    height: 18px;
+}
+header, footer {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    font-family: "Roboto";
+}
+.top-header {
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-header .logo img, .btn-menu-mobile {
+    width: auto;
+    height: 80px;
+    padding: 9px 0;
+}
+.btn-menu-mobile {
+  float: right;
+}
+.menu {
+    float: right;
+    display: flex;
+    list-style: none;
+}
+.menu .item-menu a {
+    margin-left: 20px;
+    height: 22px;
+    color: #4a4a4a;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100px;
+}
+footer h2 {
+    color: #24355a;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+}
+footer ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+footer li a{
+    color: #9195a4;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+footer .line {
+    border-top: 2px solid #24355a;
+}
+@media (max-width: 768px) {
+  .opacity-2 {
+    opacity: 0.2;
+    transition: all 1s 0.1s;
+  }
+  .top-header .logo img, .btn-menu-mobile {
+    height: 70px;
+  }
+  .menu-mobile {
+     background: #24355a;
+     color: #ffffff;
+     margin-left: -20px;
+     margin-right: -20px;
+     margin-top: -80px;
+     position: absolute;
+     z-index: 99;
+     width: 100%;
+     transition: all 0s 0s;
+     transform: skew(0deg) translateX(-120%);
+  }
+  .menu-mobile.open {
+  transition: all 1s 0.1s;
+    transform: skew(0deg) translateX(0);
+  }
+  .menu-mobile.d-none {
+      transition: all 1s 0.1s;
+     transform: skew(-14deg) translateX(-120%);
+  }
+  .menu-mobile .item-menu {
+    text-align: center;
+  }
+  .menu-mobile .item-menu a {
+    color: #ffffff;
+    line-height: 44px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .menu-mobile .item-menu a.active {
+    text-decoration: underline;
+  }
+  main a.link-more {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
