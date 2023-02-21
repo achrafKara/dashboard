@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="38px" height="21px" viewBox="0 0 38 21" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+    <g id="Group-2" transform="translate(1.5 1.5)">
+        <path d="M0 0.5L35 0.5" transform="matrix(1 0 0 1 1.4210855E-14 0)" id="Line-2" fill="none" fill-rule="evenodd" stroke="#24355A" stroke-width="3" stroke-linecap="round" />
+        <path d="M0 0.5L35 0.5" transform="translate(1.4210855E-14 9)" id="Line-2-Copy" fill="none" fill-rule="evenodd" stroke="#24355A" stroke-width="3" stroke-linecap="round" />
+        <path d="M0 0.5L35 0.5" transform="translate(1.4210855E-14 17)" id="Line-2-Copy-2" fill="none" fill-rule="evenodd" stroke="#24355A" stroke-width="3" stroke-linecap="round" />
+    </g>
+</svg>

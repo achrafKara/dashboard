@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+	<title>Dashboards</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="top-bar btn-register d-none d-md-block">
+        <a href="#"><span>LOGIN</span></a>
+        <a href="#"><span>REGISTER</span></a>
+        <a href="#" target="_blank"><span class="shape"><img src="img/shape-twitter.svg"></span></a>
+    </div>
+    <header>
+        <div class="top-header row">
+            <div class="logo col-md-3 col-6"><img src="img/top-header.png"></div>
+            <div class="float-right col-md-9 col-6">
+                <div class="d-none d-md-block">
+                    <ul class="menu">
+                        <li class="item-menu"><a href="challenge.html">The challenge</a></li>
+                        <li class="item-menu"><a href="why.html">Why U-label</a></li>
+                        <li class="item-menu"><a href="#">About us</a></li>
+                        <li class="item-menu"><a href="faq.html">FAQs</a></li>
+                        <li class="item-menu"><a href="sign.html">Sign in</a></li>
+                    </ul>
+                </div>
+                <div class="d-block d-md-none btn-menu-mobile">
+                    <a id="close-menu-btn" href="#" class="d-none"><img src="img/close-btn.svg"></a>
+                    <a id="show-menu-btn" href="#" class=""><img src="img/menu-btn.svg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-mobile row d-block d-md-none">
+            <ul class="menu col-12 d-block">
+                <li class="item-menu active"><a class="active" href="home.html">Home</a></li>
+                <li class="item-menu"><a href="challenge.html">The challenge</a></li>
+                <li class="item-menu"><a href="why.html">Why U-label</a></li>
+                <li class="item-menu"><a href="#">About us</a></li>
+                <li class="item-menu"><a href="faq.html">FAQs</a></li>
+                <li class="item-menu"><a href="contact.html">Contact</a></li>
+                <li class="item-menu"><a href="sign.html">Sign in</a></li>
+                <li class="item-menu"><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </header>
+
+	<div class="wrapper">
+
+		<div class="main">
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3"><strong>Analytics</strong> Dashboard</h1>
+
+					<div class="row">
+						<div class="col-xl-6 col-xxl-5 d-flex">
+							<div class="w-100">
+								<div class="row h-100">
+									<div class="col-sm-6 d-flex flex-column">
+										<div class="card shadow-lg">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Scans</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="fas fa-qrcode"></i>
+														</div>
+													</div>
+												</div>
+												<h2 class="mt-1 mb-3">5531</h2>
+											</div>
+										</div>
+										<div class="card shadow-lg flex-grow-1">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Top scanned</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="fas fa-star"></i>
+														</div>
+													</div>
+												</div>
+												<h2 class="mt-1 mb-3">Chateau toto: 1215</h2>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 d-flex flex-column"">
+										<div class="card shadow-lg">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Active e-labels</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="fas fa-file-lines"></i>
+														</div>
+													</div>
+												</div>
+												<h2 class="mt-1 mb-3">64</h2>
+											</div>
+										</div>
+										<div class="card shadow-lg flex-grow-1">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Top country</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="fas fa-flag"></i>
+														</div>
+													</div>
+												</div>
+												<h2 class="mt-1 mb-3">France: 4300</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xl-6 col-xxl-7">
+							<div class="card shadow-lg flex-fill w-100">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">Scan number variation</h5>
+								</div>
+								<div class="card-body py-3">
+									<div class="chart chart-sm">
+										<canvas id="chartjs-dashboard-line"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-md-6 col-xxl-3 d-flex order-2 order-xxl-3">
+							<div class="card shadow-lg flex-fill w-100">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">Scans per country</h5>
+								</div>
+								<div class="card-body d-flex">
+									<div class="align-self-center w-100">
+										<div class="py-3">
+											<div class="chart chart-xs">
+												<canvas id="chartjs-dashboard-pie"></canvas>
+											</div>
+										</div>
+
+										<table class="table mb-0">
+											<tbody>
+												<tr>
+													<td>France</td>
+													<td class="text-end">4306</td>
+												</tr>
+												<tr>
+													<td>Spain</td>
+													<td class="text-end">3801</td>
+												</tr>
+												<tr>
+													<td>Belgium</td>
+													<td class="text-end">1689</td>
+												</tr>
+												<tr>
+													<td>Italy</td>
+													<td class="text-end">955</td>
+												</tr>
+												<tr>
+													<td>Germany</td>
+													<td class="text-end">67</td>
+												</tr>
+												<tr>
+													<td>Rest of the world</td>
+													<td class="text-end">432</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
+							<div class="card shadow-lg flex-fill w-100">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">Map</h5>
+								</div>
+								<div class="card-body px-4 d-flex">
+									<div class="align-self-center w-100">
+										<div id="world_map"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-1">
+							<div class="card shadow-lg flex-fill">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Calendar</h5>
+								</div>
+								<div class="card-body d-flex">
+									<div class="align-self-center w-100">
+										<div class="chart">
+											<div id="datetimepicker-dashboard"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-lg-8 col-xxl-9 d-flex">
+							<div class="card shadow-lg flex-fill">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">Last added e-labels</h5>
+								</div>
+								<table class="table table-hover my-0">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th class="d-none d-xl-table-cell">Adding Date</th>
+											<th>Status</th>
+											<th class="d-none d-md-table-cell">Type</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Apollo</td>
+											<td class="d-none d-xl-table-cell">01/10/2022</td>
+											<td><span class="badge bg-success">Active</span></td>
+											<td class="d-none d-md-table-cell">Wine</td>
+										</tr>
+										<tr>
+											<td>Fireball</td>
+											<td class="d-none d-xl-table-cell">28/09/2022</td>
+											<td><span class="badge bg-danger">Deleted</span></td>
+											<td class="d-none d-md-table-cell">Wine</td>
+										</tr>
+										<tr>
+											<td>Hades</td>
+											<td class="d-none d-xl-table-cell">05/09/2022</td>
+											<td><span class="badge bg-success">Active</span></td>
+											<td class="d-none d-md-table-cell">Spirit</td>
+										</tr>
+										<tr>
+											<td>Nitro</td>
+											<td class="d-none d-xl-table-cell">13/08/2022</td>
+											<td><span class="badge bg-warning">Draft</span></td>
+											<td class="d-none d-md-table-cell">AWP</td>
+										</tr>
+										<tr>
+											<td>Phoenix</td>
+											<td class="d-none d-xl-table-cell">11/08/2022</td>
+											<td><span class="badge bg-success">Active</span></td>
+											<td class="d-none d-md-table-cell">Spirit</td>
+										</tr>
+										<tr>
+											<td>PX</td>
+											<td class="d-none d-xl-table-cell">07/08/2022</td>
+											<td><span class="badge bg-success">Active</span></td>
+											<td class="d-none d-md-table-cell">Wine</td>
+										</tr>
+										<tr>
+											<td>Romeo</td>
+											<td class="d-none d-xl-table-cell">18/07/2022</td>
+											<td><span class="badge bg-success">Active</span></td>
+											<td class="d-none d-md-table-cell">AWP</td>
+										</tr>
+										<tr>
+											<td>Wombat</td>
+											<td class="d-none d-xl-table-cell">12/07/2022</td>
+											<td><span class="badge bg-warning">Draft</span></td>
+											<td class="d-none d-md-table-cell">Wine</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4 col-xxl-3 d-flex">
+							<div class="card shadow-lg flex-fill w-100">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">Active e-labels by type</h5>
+								</div>
+								<div class="card-body d-flex w-100">
+									<div class="align-self-center chart chart-lg">
+										<canvas id="chartjs-dashboard-bar"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</main>
+
+		</div>
+	</div>
+
+	<footer>
+        <hr class="line"/>
+        <div class="row">
+            <div class="col-md-12 col-6 mb-4"><img src="img/Logo_footer.png"></div>
+            <div class="col-md-3 col-6 mb-4">The online platform to create e-labels and drive transparency and digital product information</div>
+            <div class="col-md-2 offset-md-1 col-6 mb-4">
+                <h2>My account</h2>
+                <ul>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-6 mb-4">
+                <h2>Information</h2>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-6 mb-4">
+                <h2>Quick links</h2>
+                <ul>
+                    <li><a href="#">Faq’s</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-6 mb-4">
+                <h2>Have a question?</h2>
+                <ul>
+                    <li><a href="#">contact@u-label.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="line"/>
+        <p>Copyright ©2021 All rights reserved | by u-label.com </p>
+    </footer>
+
+	<script src="js/app.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+			// Line chart
+			new Chart(document.getElementById("chartjs-dashboard-line"), {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Scans",
+						fill: true,
+						backgroundColor: gradient,
+						borderColor: window.theme.primary,
+						data: [
+							2115,
+							1562,
+							1584,
+							1892,
+							1587,
+							1923,
+							2566,
+							2448,
+							2805,
+							3438,
+							2917,
+							3327
+						]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 1000
+							},
+							display: true,
+							borderDash: [3, 3],
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: "pie",
+				data: {
+					labels: ["France", "Spain", "Belgium", "Italy", "Germany", "Others"],
+					datasets: [{
+						data: [4306, 3801, 1689, 955, 667, 432],
+						backgroundColor: [
+							'blue',
+							'green',
+							'red',
+							'yellow',
+							'purple'
+						],
+						borderWidth: 2
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					cutoutPercentage: 0
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: "bar",
+				data: {
+					labels: ["Wine", "AWP", "Spirit"],
+					datasets: [{
+						label: "Active e-label:",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [44, 9, 11],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			
+			new svgMap({
+				targetElementID: 'world_map',
+				data: {
+					data: {
+						scans: {
+							name: 'Number of QR scans:',
+							format: '{0} Scans'
+						}
+					},
+					applyData: 'scans',
+					values: {
+						FR: {scans: 4306},
+						ES: {scans: 3801},
+						BE: {scans: 1689},
+						IT: {scans: 955},
+						DE: {scans: 667},
+					},
+				},
+				countries: {
+					EH: false
+				},
+				initialZoom: 1.2,
+				initialPan: { x: 40, y: 70 }
+				});
+		})
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+			document.getElementById("datetimepicker-dashboard").flatpickr({
+				inline: true,
+				prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+				nextArrow: "<span title=\"Next month\">&raquo;</span>",
+				defaultDate: defaultDate
+			});
+		});
+	</script>
+
+</body>
+
+</html>
